@@ -1,0 +1,8 @@
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^(www.)?imtm.ac.bd$ 
+RewriteCond %{REQUEST_URI} !^/imtm/ 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.*)$ /CodeIgniter-3.1.6/$1 
+RewriteCond %{HTTP_HOST} ^(www.)?imtm.ac.bd$ 
+RewriteRule ^(/)?$ imtm/index.php [L] 
