@@ -23,17 +23,19 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper('url');
+                //$this->load->helper('counter');
 		//function Welcome() {}
 	}    
  
 	public static function index()
 	{
             
-            $data = array();
-			$var = new Welcome();
-            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
-            $data['main_content'] = $var->load->view('imtm', $data, TRUE);
-            //$this->load->view('index',$data);
-			$var->load->view('index',$data);
-	}
+        $data = array();
+        $var = new Welcome();
+        $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+        $data['main_content'] = $var->load->view('imtm', $data, TRUE);
+        //$this->load->view('index',$data);
+        //$data['counter'] = count_visitor();
+        $var->load->view('index', $data);
+    }
 }
