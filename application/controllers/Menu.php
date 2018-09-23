@@ -55,4 +55,237 @@ class Menu extends CI_Controller {
             $var->load->view('index',$data);
         }
         
+        public static function marineTechnology()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('department/marineTechnology', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function studentInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('studentInfo/studentInfo', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function ShipBuildingStudentInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('studentInfo/shipBuildingStudent', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function MarineTechnologyStudentInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('studentInfo/marineTechnologyStudent', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function ShipBuildingTeacherInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('department/shipBuildingTeacher', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function ShipBuildingStuffInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('department/shipBuildingStuff', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function MarineTechnologyTeacherInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('department/marineTechnologyTeacher', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function MarineTechnologyStuffInfo()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('department/marineTechnologyStuff', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function missionNvision()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('missionVision', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function MessageFromPrincipal()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('messagePrincipal', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function MessageFromVicePrincipal()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('messageVicePrincipal', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function Administration()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('Administration', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function AtAGlanceIMTM()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('AtAGlanceIMTM', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function academics()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/academics', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function syllabus()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/syllabus', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function classRoutine()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/classRoutine', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function academicCalendar()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/academicCalendar', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function result()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/result', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+
+        public static function rnd()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('academics/rnd', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function DigitalContent()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('digitalContent/digitalContent', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function Album()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('album/album', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function JobPlacement()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('IMTMCareer/jobPlacement', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function IMTMPlacementCell()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('IMTMCareer/PlacementCell', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function JobOpportunity()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('IMTMCareer/JobOpportunity', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function JobSeeker()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('IMTMCareer/JobSeeker', $data, TRUE);
+            $var->load->view('index',$data);
+        }
+        
+        public static function ContactUs()
+        {
+            $data = array();
+            $var = new Menu();
+            $data['menubar'] = $var->load->view('inc/menubar', $data, TRUE);
+            $data['main_content'] = $var->load->view('ContactUs', $data, TRUE);
+            $var->load->view('index',$data);
+        }
 }
